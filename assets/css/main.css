@@ -81,7 +81,7 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 480px;
 		}
 
 	}
@@ -112,13 +112,13 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 12pt;
 	}
 
 		@media screen and (max-width: 1680px) {
 
 			html {
-				font-size: 12pt;
+				font-size: 8pt;
 			}
 
 		}
@@ -126,7 +126,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			html {
-				font-size: 11pt;
+				font-size: 7pt;
 			}
 
 		}
@@ -134,7 +134,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 10pt;
+				font-size: 6pt;
 			}
 
 		}
@@ -1293,7 +1293,7 @@ input, select, textarea {
 		#header .logo {
 			width: 5.5rem;
 			height: 5.5rem;
-			line-height: 5.5rem;
+			line-height: 6rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}
@@ -1358,18 +1358,19 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
-					height: 2.75rem;
-					line-height: 2.75rem;
+					min-width: 13rem;
+					height: 4rem;
+					line-height: 4rem;
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					font-size: 1.25rem;
 					border-bottom: 0;
 				}
 
 					#header nav ul li a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
+						font-size: 1.5rem;
 					}
 
 					#header nav ul li a:active {
@@ -1544,7 +1545,7 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 60rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
@@ -1662,10 +1663,42 @@ input, select, textarea {
 		
 		
     .uilogo {
-      max-width: 80%;    /* or whatever width you need */
+      max-width: 68%;    /* or whatever width you need */
       height: auto;
       display: block;
       margin: 0 auto;      /* centers it if you like */
     }
 
     .icon { font-family: initial !important; }
+
+
+	.team-member {
+	display: flex;
+	align-items: center;
+	gap: 2rem; /* space between image and text */
+	margin-bottom: 2rem;
+	flex-wrap: nowrap; 
+	}
+
+	.team-member img {
+	width: 200px;
+	height: auto;
+	border-radius: 8px;
+	flex-shrink: 0;
+	}
+
+	.team-member h1 {
+	color: #ffffff;
+	font-weight: 500;
+	line-height: 1.5;
+	margin: 0 0 1rem 0;
+	text-transform: none;
+	letter-spacing: 0.1rem;
+	}
+
+	.team-member p {
+	margin: 0;
+	font-size: 3rem;
+	max-width: none;
+	flex: 1;
+	}
