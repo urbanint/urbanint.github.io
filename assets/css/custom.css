@@ -48,3 +48,19 @@
   margin: 0 .25rem;
   text-decoration: none;
 }
+
+
+/* Make the "About" image smaller */
+#intro .image.main img {
+    max-width: 400px;   
+    width: 100%;       
+    height: auto;
+    margin: 0 auto;     
+    display: block;
+}
+
+/* Increase the paragraph font size */
+#intro p {
+    font-size: 1.3rem;   
+    line-height: 1.6;    
+}
